@@ -87,8 +87,8 @@ def create_dataset(data_dir, num_samples=6602, cache_file="indexes.npy", seed=42
         load_data, num_parallel_calls=tf.data.AUTOTUNE, deterministic=False
     )
 
-    train_ds = tf_train_ds#.prefetch(tf.data.AUTOTUNE)
-    val_ds = tf_val_ds#.prefetch(tf.data.AUTOTUNE)
+    train_ds = tf_train_ds  # .prefetch(tf.data.AUTOTUNE)
+    val_ds = tf_val_ds  # .prefetch(tf.data.AUTOTUNE)
     return train_ds, val_ds
 
 

@@ -58,7 +58,7 @@ class Builder(tfds.core.GeneratorBasedBuilder):
         }
 
     def _generate_examples(self, ds):
-        for i,sample in enumerate(tfds.as_numpy(ds)):
+        for i, sample in enumerate(tfds.as_numpy(ds)):
             chip1, chip2, month1, month2, year1, year2 = sample
             yield (
                 i,
